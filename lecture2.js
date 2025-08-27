@@ -256,25 +256,26 @@ Q.2 write a code which can give grades to students according to their scores:
 // console.log ("the grade is :",grade);
 
 // Using Switch case
-result = prompt ("enter your marks:");
+const result = Number(prompt("enter your marks:"));
 let grade;
 
-switch (result){
-    case (result > 90 & result < 100):
+switch (true) {
+    case (result >= 80 && result <= 100):
         grade = "A";
         break;
-    case (result > 70 & result < 89):
+    case (result >= 70 && result <= 79):
         grade = "B";
         break;
-    case (result > 60 & result < 79):
+    case (result >= 60 && result <= 69):
         grade = "C";
         break;
-    case (result > 50 & result < 59):
+    case (result >= 50 && result <= 59):
         grade = "D";
         break;
-    case (result > 0 & result < 49):
+    case (result >= 0 && result <= 49):
         grade = "F";
-        
+        break;
+    default:
+        grade = "Invalid marks";
 }
- 
-console.log ("the grade is :",grade);
+console.log("the grade is:", grade);
