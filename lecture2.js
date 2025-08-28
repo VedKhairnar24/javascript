@@ -258,11 +258,11 @@ Q.2 write a code which can give grades to students according to their scores:
 // Using Switch case
 const result = Number(prompt("enter your marks:"));
 let grade;
-
 switch (true) {
     case (result >= 80 && result <= 100):
         grade = "A";
         break;
+
     case (result >= 70 && result <= 79):
         grade = "B";
         break;
