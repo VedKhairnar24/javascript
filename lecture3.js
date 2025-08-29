@@ -131,7 +131,7 @@ console.log(dataAll);
 //string interpolation
 // to create string by doing substitution of placeholders `string text is ${expression}string text`
 let dataAll = `the string is ${str} and there length ${str.length} and in 0 and 4 index is ${str[0]}`;
-*/
+
 // escepe characters
 // /n add new line
 // /t add one tab space 
@@ -144,7 +144,6 @@ let dataAll = `the string is ${str} and there length ${str.length} and in 0 and 
 //str.trim() // for remove extra spaces in string
 
 
-str = "khairnar Ved ";
 Uppercase = str.toUpperCase();
 Lowercase = str.toLowerCase();
 trimString = str.trim();
@@ -152,3 +151,24 @@ trimString = str.trim();
 let print = `string in Upper case is ${Uppercase} and in ${Lowercase} and trim string is ${trimString}`;
 
 console.log (print);
+// str = "khairnar ved ";
+// str2 = "khairnar"
+// str.slice(start, end?) //returns part of string
+// str1.contact(str2) //joins str2 with str1
+// str.replace(searchVal, newVal) 
+// str.chartAt(idx)
+
+// console.log (str.slice(0, 8));
+// console.log (str.concat (str2));
+// console.log( str.replace("ved","vedant"));
+// console.log (str.charAt(3));
+
+//Q.1 prompt the user to enter their full name. Generate a username for them based on the input. Start username with @, followed by their full name and ending with the fullname length. ex. @vedkhairnar11
+
+let userfirstN = prompt("enter your first name");
+let usersecondN = prompt("enter your Sir name");
+
+userdata = userfirstN + usersecondN;
+username = `@${userdata.toLowerCase()}${userdata.length}`;
+console.log("User name:",username);
+*/
