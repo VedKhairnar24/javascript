@@ -57,14 +57,98 @@ while (i <= 5){
     console.log(i);
 i++;
 }
-*/
 
-// do while
-// do{
-//     // stetment
-// }while(condition);
+do while
+do{
+    // stetment
+}while(condition);
 i = 0;
 do{
     console.log("test",i);
     i++;
 }while(i <= 5);
+
+// for-of loop.................
+
+let str = "VedKhairnar";
+for(i of str){
+    console.log("i =",i);
+}
+// for-in loop in object
+
+let product = {
+    id : 1,
+    name: "Boll pen",
+    price : 30,
+    type : "Boll point pen",
+    company : "tramaxx"
+};
+
+for (let i in product){
+    console.log(i,"=",product[i]);
+}
+
+
+// practice Questions
+//Q.1 print all even nubers form 0 to 100.
+
+for (i = 0; i <= 100; i++){
+    if (i%2 === 0){
+        console.log(i);
+    }
+}
+
+
+// Q.2 create a game where you start with any random game number until the user enters correct value.
+let gameNum = 30;
+let userNum = prompt("guess the number:");
+
+while (userNum != gameNum){
+    userNum = prompt("try again");
+
+}
+console.log("congratulatios.....! \n your Number is :", userNum);
+
+
+// strings in javascript.........................
+// strings is a sequence of characters used to represent text
+
+//create a string
+let str = "ved khairnar";
+
+// string length
+// str.length;
+
+//string lndices
+// str[1],[4];
+
+let dataAll = `the string is ${str} and there length ${str.length} and in 0 and 4 index is ${str[0]}`;
+
+console.log(dataAll);
+
+// templete literals in javascript
+// A way to have embedded expressions in strings using `this is templete literal`
+//string interpolation
+// to create string by doing substitution of placeholders `string text is ${expression}string text`
+let dataAll = `the string is ${str} and there length ${str.length} and in 0 and 4 index is ${str[0]}`;
+*/
+// escepe characters
+// /n add new line
+// /t add one tab space 
+
+// strings methods in javascript
+// these are built-in function to manipulate a string 
+
+//str.toUpperCase()
+//str.toLowerCase()
+//str.trim() // for remove extra spaces in string
+
+
+str = "khairnar Ved ";
+Uppercase = str.toUpperCase();
+Lowercase = str.toLowerCase();
+trimString = str.trim();
+
+let print = `string in Upper case is ${Uppercase} and in ${Lowercase} and trim string is ${trimString}`;
+
+console.log (print);
