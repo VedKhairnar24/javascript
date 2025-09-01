@@ -101,10 +101,31 @@ console.log(items1.toString()); // array to string
 // addHero = dcHeros.unshift("x-man"); // add element to start
 // RemHero = marvelHeros.shift() // delete first element 
 
-let heroes = ["iromma", "warmachine", "thor", "spiderman", "superman", "bateman", "flash"];
+// let heroes = ["iromma", "warmachine", "thor", "spiderman", "superman", "bateman", "flash"];
 
 // cutterArr = heroes.slice(1, 5);
-cutterArr = heroes.slice(4);
+// cutterArr = heroes.slice(4);
 
+let numArr = [1, 2, 3, 4, 5, 6, 7];
+// numArr.splice(4, 1, 333) // splice(start: number, deleteCount?: number): number[]
+// numArr.splice(5, 0, 111) // if only add element
+// numArr.splice(3, 1,) // if only delete element
+// numArr.splice(1, 1, 22); // if replace element
+// numArr.splice(4); // after 4 index delete remaining element
 
-console.log (cutterArr ,heroes);
+// console.log (numArr);
+
+// Practice.................
+/* Q1. creat an array to store companies -> "Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"
+a. Remove the first company form the array
+b. Remove Uber & Add Ola in its place
+c. Add Amazon at the end
+*/
+companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+
+Rfirst = companies.shift();
+RandA = companies.splice(1, 1, "Ola");
+AddA = companies.push("Amazon");
+
+console.log(`Remove First Company ${Rfirst} \nRemove Uber & Add Ola ${RandA} \nAdd amazon in end ${AddA} \nfainal Array:${companies}`);
+
